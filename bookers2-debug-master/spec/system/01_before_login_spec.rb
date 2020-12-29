@@ -71,7 +71,7 @@ describe '[STEP1] ユーザログイン前のテスト' do
     context 'リンクの内容を確認' do
       subject { current_path }
 
-      it 'Homeを押すと、トップ画面に遷移する' do
+      it 'Homeを押すと��トップ画面に遷移する' do
         home_link = find_all('a')[1].native.inner_text
         home_link = home_link.delete(' ')
         home_link.gsub!(/\n/, '')
